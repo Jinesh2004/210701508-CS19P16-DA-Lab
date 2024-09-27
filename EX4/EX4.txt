@@ -1,0 +1,15 @@
+EX:4
+start-dfs.cmd
+start-yarn.cmd
+jps
+hadoop fs -mkdir /pig
+hadoop fs -mkdir /pig/ex4
+hadoop fs -put C:\ex4\class.txt /pig/ex4
+hadoop fs -put C:\ex4\uppercase.py /pig/ex4
+cd/--change the path
+cd pig-0.17.0--for inialize pig
+pig -f C:\ex4\script.pig--(inside pig cmd)
+it will run big after checking browser there output repository should be created then press clr+c to terminate -yes
+cd/--change path 
+
+hadoop fs -cat /pig/ex4/output/part-m-00000

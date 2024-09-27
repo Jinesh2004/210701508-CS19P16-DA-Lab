@@ -1,0 +1,11 @@
+EX:1
+word count using python;
+cmd:
+start-dfs.cmd
+start-yarn.cmd
+jps
+hadoop fs -mkdir /input
+hadoop fs -put -f C:/ex2/class.txt /input
+hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.3.6.jar -input /user/ex1/input.txt -output /user/ex1/output -mapper "python C:/ex2/mapper1.py" -reducer "python C:/ex2/reducer1.py"
+hadoop fs -ls /input/output/
+hadoop fs -cat /input/output/part-00000

@@ -1,0 +1,14 @@
+open cmd 
+cmd:
+start-all.cmd
+jps
+cd c:\derby\bin
+c:\derby\bin StartNetworkServer -h 0.0.0.0
+
+new cmd
+cd c:\hive\bin
+c:\hive\bin hive --service schematool -dbType derby -initSchema --force
+hive
+ 
+then hive will come in that we can enter sql cmds and view in localhost
+

@@ -1,0 +1,37 @@
+start-dfs.cmd
+jps
+start-yarn.cmd
+jps
+localhost:8088
+localhost:9870
+
+hdfs namenode -format
+start-all.cmd 
+JpsNode manager
+Resource manager
+Namenode
+Datanode
+Jps
+)
+hadoop fs -mkdir /input
+hadoop fs -put C:/input.txt  /input 
+hadoop fs -cat /input/input.txt
+
+hadoop fs -put C:\hadoop\ex 1 hadoop.txt
+
+mohan
+
+
+
+hdfs namenode -format
+start-dfs.cmd
+start-yarn.cmd
+jps
+hadoop fs -mkdir /input
+hadoop fs -put 'path_of_text_file' /input
+hadoop fs -ls /input/
+hadoop dfs -cat /input/data.txt
+hadoop jar 'path_of_mapreduce_examples.jar' wordcount /input /output
+hadoop fs -cat /out/*
+
+hadoop fs -put C:\hadoop\ex 1 hadoop.txt /input

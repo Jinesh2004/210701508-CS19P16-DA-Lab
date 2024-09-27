@@ -1,0 +1,23 @@
+json commands
+jq '.[] | {name: .name, salary: .salary}' C:\EX6\employees.json
+Aggregation: Calculate the total salary.
+
+bash
+
+jq '[.[] | .salary] | add' C:\EX6\employees.json
+Count: Count the number of employees.
+
+bash
+
+jq '. | length' C:\EX6\employees.json
+Filter: Get employees from the Engineering department.
+
+bash
+
+jq '.[] | select(.department == "Engineering")' C:\EX6\employees.json
+Sort: Sort employees by age.
+
+bash
+
+jq 'sort_by(.age)' C:\EX6\employees.json
+

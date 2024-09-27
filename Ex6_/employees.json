@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Karthick",
+        "department": "Engineering",
+        "age": 20,
+        "salary": 70000
+    },
+    {
+        "id": 2,
+        "name": "Madan",
+        "department": "Marketing",
+        "age": 21,
+        "salary": 55000
+    },
+    {
+        "id": 3,
+        "name": "Manju",
+        "department": "Engineering",
+        "age": 21,
+        "salary": 60000
+    },
+    {
+        "id": 4,
+        "name": "Prasad",
+        "department": "Human Resources",
+        "age": 21,
+        "salary": 65000
+    },
+    {
+        "id": 5,
+        "name": "Basman",
+        "department": "Finance",
+        "age": 21,
+        "salary": 75000
+    }
+]
